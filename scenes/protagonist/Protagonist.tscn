@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://ca6sumh6cpk6q"]
 
-[ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_t14cg"]
+[ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_fhere"]
 [ext_resource type="Texture2D" uid="uid://cjmwwy06cmb2b" path="res://assets/kenney_tinydungeon/Tiles/tile_0084.png" id="2_16qfx"]
 
 [node name="Protagonist" type="Node2D"]
 editor_description = "Tobar"
-script = ExtResource("1_t14cg")
+script = ExtResource("1_fhere")
 metadata/Tobar = ""
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
