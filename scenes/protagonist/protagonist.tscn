@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://pnkqjhde33pv"]
 
 [ext_resource type="Texture2D" uid="uid://i7dsw32mi4x1" path="res://assets/kenney_tinydungeon/Tiles/tile_0110.png" id="1_3hc77"]
-[ext_resource type="Script" path="res://scenes/protagonist/protagonist.cs" id="1_4acvl"]
+
+[ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_yfe1g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ubgvj"]
 radius = 8.06226
@@ -9,6 +10,7 @@ radius = 8.06226
 [node name="protagonist" type="Node2D"]
 editor_description = "Mr.Krab"
 script = ExtResource("1_4acvl")
+
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
