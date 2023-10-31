@@ -5,3 +5,4 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="protagonist" parent="." instance=ExtResource("1_1mcrs")]
+[node name="game_camera_parent" parent="." instance=ExtResource("2_bjb20")]
