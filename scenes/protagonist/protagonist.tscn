@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://pnkqjhde33pv"]
+
+[ext_resource type="Texture2D" uid="uid://i7dsw32mi4x1" path="res://assets/kenney_tinydungeon/Tiles/tile_0110.png" id="1_3hc77"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ubgvj"]
+radius = 8.06226
+
+[node name="protagonist" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_3hc77")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_ubgvj")
