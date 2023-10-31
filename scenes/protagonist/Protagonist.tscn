@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://ca6sumh6cpk6q"]
+[gd_scene load_steps=4 format=3 uid="uid://ca6sumh6cpk6q"]
 
-[ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_fhere"]
+[ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_g7baa"]
 [ext_resource type="Texture2D" uid="uid://cjmwwy06cmb2b" path="res://assets/kenney_tinydungeon/Tiles/tile_0084.png" id="2_16qfx"]
+[ext_resource type="PackedScene" uid="uid://dgys3f8ou7gb6" path="res://scenes/game_camera/GameCamera.tscn" id="2_yu11l"]
 
 [node name="Protagonist" type="Node2D"]
 editor_description = "Tobar"
-script = ExtResource("1_fhere")
+script = ExtResource("1_g7baa")
 metadata/Tobar = ""
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, -11)
+scale = Vector2(36.8125, 32.5)
 texture = ExtResource("2_16qfx")
+
+[node name="Root" parent="." instance=ExtResource("2_yu11l")]
