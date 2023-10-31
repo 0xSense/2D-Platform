@@ -13,7 +13,11 @@ public partial class Protagonist : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		MoveRight();
 	}
 
-
+	public string MoveRight()
+	{
+		return "Move Right!";
+	}
 }
