@@ -1,22 +1,37 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public partial class Protagonist : Node2D
 {
-	[Export] public int Speed;
-	// Called when the node enters the scene tree for the first time.
+	[Export] public float Speed;
+	//procs initially on Class creation
 	public override void _Ready()
 	{
+
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	// procs every frame
 	public override void _Process(double delta)
 	{
-		MoveRight();
+		Vector2 movement = GetMovementInput() * (float)(Speed * delta);
+		Position += movement;
+
 	}
 
-	public string MoveRight()
+	public Vector2 GetMovementInput()
 	{
-		return "Move Right!";
+		Vector2 movement = Vector2.Zero;
+
+		if (Input.IsActionPressed("move_left"))
+			movement.X -= 1;
+		if (Input.IsActionPressed("move_right"))
+			movement.X += 1;
+		if (Input.IsActionPressed("move_up"))
+			movement.Y -= 1;
+		if (Input.IsActionPressed("move_down"))
+			movement.Y += 1;
+
+		return movement;
 	}
 }
