@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crjm43bno61pv"
-path="res://.godot/imported/tile_0106.png-723060cde8972c19e8192b35ac0b20c9.ctex"
+path="res://.godot/imported/Dagger.png-a14cefd001ce3eab9504de6c5f764f94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_tinydungeon/Tiles/tile_0106.png"
-dest_files=["res://.godot/imported/tile_0106.png-723060cde8972c19e8192b35ac0b20c9.ctex"]
+source_file="res://scenes/entities/weapons/dagger/Dagger.png"
+dest_files=["res://.godot/imported/Dagger.png-a14cefd001ce3eab9504de6c5f764f94.ctex"]
 
 [params]
 

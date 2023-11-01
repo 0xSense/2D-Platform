@@ -10,8 +10,8 @@ script = ExtResource("1_g7baa")
 metadata/Tobar = ""
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(15, -11)
-scale = Vector2(36.8125, 32.5)
+position = Vector2(0, -7)
+scale = Vector2(1, 0.883)
 texture = ExtResource("2_16qfx")
 
 [node name="Root" parent="." instance=ExtResource("2_yu11l")]
