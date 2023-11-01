@@ -2,16 +2,23 @@
 
 [ext_resource type="Script" path="res://scenes/protagonist/Protagonist.cs" id="1_g7baa"]
 [ext_resource type="Texture2D" uid="uid://cjmwwy06cmb2b" path="res://assets/kenney_tinydungeon/Tiles/tile_0084.png" id="2_16qfx"]
-[ext_resource type="PackedScene" uid="uid://dgys3f8ou7gb6" path="res://scenes/game_camera/GameCamera.tscn" id="2_yu11l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rkrch"]
+radius = 5.0
 
 [node name="Protagonist" type="Node2D"]
 editor_description = "Tobar"
 script = ExtResource("1_g7baa")
+Speed = 25.0
 metadata/Tobar = ""
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(15, -11)
-scale = Vector2(36.8125, 32.5)
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, -7)
+scale = Vector2(1, 0.883)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("2_16qfx")
 
-[node name="Root" parent="." instance=ExtResource("2_yu11l")]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D"]
+position = Vector2(0, 2.26501)
+shape = SubResource("CircleShape2D_rkrch")
